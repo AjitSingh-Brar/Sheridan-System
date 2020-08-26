@@ -1,0 +1,225 @@
+@charset "ISO-8859-1";
+
+@charset "ISO-8859-1";
+
+html,body{
+	
+	overflow-x:hidden;
+	box-sizing: border-box;
+	width: 101%;
+}
+.p1{
+	margin-left:auto;
+	margin-right:auto;
+	width:30%;
+	font-size:250%;
+	
+	
+}
+
+.topnav{
+	overflow: hidden;
+}
+
+.topnav a{
+	 color: #0000ff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight:bold;
+  width: 15%;
+  text-align: center; 
+  padding-right:75px;
+  padding-top:50px;
+  padding-bottom:50px;
+   padding-left:75px;
+}
+
+
+
+/* Add a background color on mouse-over */
+.topnav a:hover {
+  background-color: #000080;
+  color:white;
+  height:40px;
+  padding:75px;
+}
+
+
+
+
+
+.big{
+	background-image: url("/images/lib.jpg");
+    width: 101%;
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	
+	
+}
+
+
+.show{
+	background-color:#0c0c67;
+	color:white;
+	padding:10px;
+	
+	height:200px;
+	width:100%;
+}
+
+
+.container {
+  position: relative;
+  max-width: 700px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+  
+}
+
+<!--.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  left:0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 20%; /* Full width */
+  padding: 10px; /* Some padding */
+  
+}
+.container .conten {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  right:0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 20%; /* Full width */
+  padding: 10px; /* Some padding */
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+.c1 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.content::after {
+  content: "";
+  clear: both;
+  display: table;
+}-->
+
+.d1{
+	background: #d5d5d5;
+	width:101.5%;
+	height:600px;
+	position :relative;
+	top:50px;
+}
+TD {
+border-right:2px solid #c0c0c0;
+border-left:2px solid #c0c0c0;
+border-bottom:0px solid white;
+border-top:0 solid #c0c0c0;
+background-color:#EEEEEE;
+padding: 0px 5px 0px 5px;
+}
+.h{
+	color:Orange;
+}
+#button {
+	
+  border-radius: 4px;
+  background-color: #ec7600;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#button:hover span {
+  padding-right: 25px;
+}
+
+#button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+.dc span{
+	display:block;
+}
+.da{
+	display:inline;
+}
+  
+  
+  
+.col{
+	position:relative;
+	left:60%;
+	font-size:15px;
+	color:white;
+		border-style:outset;
+	border-color:white;
+	padding:15px;
+	border-radius:5px;
+	width:30%;
+	align:center;
+	  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+}
+
+
+
+
+
+
+
+
+
+
+
+

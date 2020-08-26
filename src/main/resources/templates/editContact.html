@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Modify Books</title>
+<link rel="stylesheet" type="text/css"  media="all"  href="../static/Addc.css" th:href="@{/Addc.css}"/>
+</head>
+<body>
+<center><div><img src="../static/images/sheridan1.png" th:src="@{/images/sheridan1.png} " href="/sear" th:href="@{/sear}" height="150px"/></div></center>
+
+<div class="topnav">
+  <center><span id="s1"><a  class="active" href="home.html" role="button">Programs</a></span>
+  <span id="s2" ><a href="#news">Admissions</a></span>
+  <span id="s3"><a href="#contact">Student Life</a></span>
+  <span id="s4"><a href="#about">International</a></span>
+  <span id="s5"><a href="#about">About</a></span>&nbsp;
+  <span class="s6"><a  id="smaller" href="#search">Search</a></span></center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+
+
+
+ <div class="big">
+  
+<center>
+<form method="GET" action="/modify" id="form1" class="col">
+<input type="hidden" name="id" th:value="${contact.id}"/>
+Title:  <Input type="text" th:value="${contact.title}" name="title"/><br><br>
+Author: <input type ="text" th:value="${contact.author}" name="author"/><br><br>
+Price:<input type="number" th:value="${contact.price}" name="price"/><br><br>
+Quantity: <input type="number" th:value="${contact.quantity}" name="quantity"/><br><br>
+Course: <input type="text" th:value="${contact.course}" name="course"/>
+<br>
+<input type="hidden"  th:value="${contact.campus}" name="campus"/>
+
+<button type="submit" id="button"><span>Modify</span></button><br><br>
+</form>
+</center>
+</div>
+
+
+
+<div style="background-color:#0c0c67; color:white; padding:10px; height:500px; width:100%;">
+<div style="color:white"><h3> Get in touch </h3> </div>
+
+
+<div style="float: left;width: 300px;padding: 50px"><h4>Davis Campus</h4>
+7899 McLaughlin Road
+Brampton, Ontario L6Y 5H9T: 905 459 7533</div>
+<div style="float: right;padding: 40px; width:300px"><h4>Trafalgar Road Campus</h4>1430 Trafalgar Road
+Oakville, Ontario L6H 2L1
+T: 905 845 9430</div>
+<div style=" text-align:center;overflow: hidden; padding:40px;display:block;"><h4>Hazel McCallion Campus</h4>
+<div style="width:200px;position:relative; left:38%;">4180 Duke of York Blvd
+Mississauga, Ontario L5B 0G5
+T: 905 845 9430</div></div>
+
+
+</div>
+
+
+
+
+</body>
+</html>

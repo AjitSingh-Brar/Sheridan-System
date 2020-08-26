@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View</title>
+<link rel="stylesheet" type="text/css"  media="all"  href="../static/view.css" th:href="@{/view.css}"/>
+</head>
+<body>
+<Center><h1>Sheridan Bookstore</h1></Center>
+<center>
+<table >
+
+<th>ID</th>
+<th>Title</th>
+
+<th>Author</th>
+
+<th>Price</th>
+
+<th>Quantity</th>
+<th>Courses</th>
+<th>Campus</th>
+
+
+
+</tr>
+
+<tr th:each="drink : ${hi}">
+
+<td th:text="${drink.id}"></td>
+
+
+<td th:text="${drink.title}"></td>
+
+<td th:text="${drink.author}"></td>
+
+<td th:text="${drink.price}"></td>
+
+<td th:text="${drink.quantity}"></td>
+
+<td th:text="${drink.course}"></td>
+
+<td th:text="${drink.campus}"></td>
+
+<td><a href="" th:href="@{/editlink/{id}(id= ${drink.id})}">Edit</a></td>
+<td><a href="" th:href="@{/deletelink/{id}(id = ${drink.id})}">Delete</a></td>
+<td  ><a  th:if="${drink.quantity ge 1}" class="q-pagination-disabled"  href="" th:href="@{/purchaselink/{id}(id= ${drink.id})}">Purchase</a></td>
+
+
+
+
+</tr>
+
+
+</table></center>
+</body>
+</html>

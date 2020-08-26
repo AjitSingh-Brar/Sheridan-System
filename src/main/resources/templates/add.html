@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Contacts</title>
+<link rel="stylesheet" type="text/css" media="all" href="../static/Addc.css" th:href="@{/Addc.css}"/>
+</head>
+<body>
+<center><div><a href="{/sear}" th:href="@{/sear}"><img src="../static/images/sheridan1.png" th:src="@{/images/sheridan1.png} "  height="150px"/></a></div></center>
+
+<div class="topnav">
+  <center><span id="s1"><a  class="active" th:href="@{/sear}" role="button">Programs</a></span>
+  <span id="s2" ><a href="#news">Admissions</a></span>
+  <span id="s3"><a href="#contact">Student Life</a></span>
+  <span id="s4"><a href="#about">International</a></span>
+  <span id="s5"><a href="#about">About</a></span>&nbsp;
+  <span class="s6"><a  id="smaller" href="" th:href="@{/searh}">Search</a></span></center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+</div>
+
+
+<center>
+<div  class="big">
+
+<br>
+<form align="center" method="GET" action="/addss" id="form1" class="col">
+Title: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Input type="text" value="" name="title"/><br><br>
+Author:&nbsp;&nbsp; <input type ="text" value="" name="author"/><br><br>
+Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" value="" name="price"/><br><br>
+Quantity: <input type="number" value="" name="quantity"/><br><br>
+Courses: &nbsp;<input type="text" value="" name="course"/><br><br>
+        <input type="hidden"  th:value="${session.campuses}" name="campus"/>
+<br>
+<button type="submit" id="button"><span>Add</span></button><br><br>
+
+<a href="/view" style="font-size:20px; color:Orange;">View</a> 
+<br><br>
+<a href="/search" style="font-size:20px; color:Orange;">Search</a>
+<br><br>
+<a href="/dum" style="font-size:20px; color:Orange;">Get Dummy Records</a>
+</form>
+<br><br> 
+
+</div></center>
+
+
+
+
+
+
+
+<div style="background-color:#0c0c67; color:white; padding:10px; height:500px; width:100%;">
+<div style="color:white"><h3> Get in touch </h3> </div>
+
+
+<div style="float: left;width: 300px;padding: 50px"><h4>Davis Campus</h4>
+7899 McLaughlin Road
+Brampton, Ontario L6Y 5H9T: 905 459 7533</div>
+<div style="float: right;padding: 40px; width:300px"><h4>Trafalgar Road Campus</h4>1430 Trafalgar Road
+Oakville, Ontario L6H 2L1
+T: 905 845 9430</div>
+<div style=" text-align:center;overflow: hidden; padding:40px;display:block;"><h4>Hazel McCallion Campus</h4>
+<div style="width:200px;position:relative; left:38%;">4180 Duke of York Blvd
+Mississauga, Ontario L5B 0G5
+T: 905 845 9430</div></div>
+
+
+<div>
+<p style="position:relative ; left :5% ;font-family:Sitka Small ; font-size:30px ">Sherdian | Get Creative</p></div>
+
+<div style="position:relative; left:70%; ">
+<p>Follow us on</p>
+    <span><a href="http://www.facebook.com"><img src="../static/images/facebook.png" th:src="@{/images/facebook.png}" width="50px" /></a></span>
+    <span><a href="http://www.twitter.com"><img src="../static/images/twitter.png" th:src="@{/images/twitter.png}" width="50px"  /></a></span>
+    <span><a href="http://www.linkedin.com"><img src="../static/images/linkedin.png" th:src="@{/images/linkedin.png}" width="50px" /></a></span>
+     <span></span><a href="http://www.snapchat.com"><img src="../static/images/snapchat.png" th:src="@{/images/snap.png}" width="50px" /></a></span>
+      <span><a href="http://www.instagram.com"><img src="../static/images/instagram.png" th:src="@{/images/instagram.png}" width="50px" /></a></span>
+</div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+@charset "ISO-8859-1";
+html,body{
+	
+	overflow-x:hidden;
+	box-sizing: border-box;
+	width: 101%;
+}
+
+
+.col{
+	font-size:15px;
+	color:white;
+		border-style:outset;
+	border-color:white;
+	padding:20px;
+	border-radius:5px;
+	width:50%;
+	align:center;
+	  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+}
+#button {
+  border-radius: 4px;
+  background-color: #ff8080;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#button:hover span {
+  padding-right: 25px;
+}
+
+#button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.topnav{
+	overflow: hidden;
+}
+
+.topnav a{
+	 color: #0000ff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight:bold;
+  width: 15%;
+  text-align: center; 
+  padding-right:75px;
+  padding-top:50px;
+  padding-bottom:50px;
+   padding-left:75px;
+}
+
+
+
+/* Add a background color on mouse-over */
+.topnav a:hover {
+  background-color: #000080;
+  color:white;
+  height:40px;
+  padding:75px;
+}
+
+.big{
+	background-image: url("/images/im.jpg");
+    width: 101%;
+  /* Control the height of the image */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+	
+	
+}

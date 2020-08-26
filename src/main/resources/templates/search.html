@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Search</title>
+<link rel="stylesheet" type="text/css" media="all" href="../static/searchs.css" th:href="@{/searchs.css}"/>
+
+
+
+</head>
+<body>
+<center><div><a  href="" th:href="@{/sear}"><img src="../static/images/sheridan1.png" th:src="@{/images/sheridan1.png} "  height="150px"/></a></div></center>
+
+<div class="topnav">
+  <center><span id="s1"><a  class="active" href="" th:href="@{/sear}" role="button">Programs</a></span>
+  <span id="s2" ><a href="#news">Admissions</a></span>
+  <span id="s3"><a href="#contact">Student Life</a></span>
+  <span id="s4"><a href="#about">International</a></span>
+  <span id="s5"><a href="#about">About</a></span>&nbsp;
+  <span class="s6"><a  id="smaller" href="../templates/searchhtml" th:href="@{/search.html}">Search</a></span></center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+<div class="big">
+
+
+
+<br><div class="col">
+<form align="center" method="GET" action="/searchc" id="form1" >
+<center><h3 style="color:#fbb004">Search for Books</h3></center>
+Id:&nbsp; &nbsp; &nbsp; <input type="number" value="" name="id"/><br><br> <button type="submit" id="button"><span>Search</span></button><br><br>
+</form><br><br>
+
+
+
+<form align="center" method="GET" action="/searcht" id="form1" >
+Title:&nbsp; &nbsp; &nbsp;   <Input type="text" value="" name="title"/><br><br>
+<button type="submit" id="button"><span>Search</span></button><br><br>
+</form><br><br>
+
+<form align="center" method="GET" action="/searcha" id="form1" >
+Author:&nbsp; <input type ="text" value="" name="author"/><br><br>
+<button type="submit" id="button"><span>Search</span></button><br><br> 
+</form>
+<br><br>
+
+<form align="center" method="GET" action="/searchq" id="form1" >
+
+Quantity:  <input type="number" id="c" name="quantity1" value=""/>
+
+ <input type="number" id="c" name="quantity2" value=""/>
+<br>
+
+<br><br>
+
+<button type="submit" id="button"><span>Search</span></button><br><br> 
+</form><br><br>
+
+
+
+<form align="center" method="GET" action="/searchce" id="form1" >
+Courses:  <input type="text" value="" name="course"/><br><br>
+        
+<br>
+<button type="submit" id="button"><span>Search</span></button><br><br>
+
+
+</form>
+</div>
+<br><br> 
+</div>
+
+
+<div style="background-color:#4e546b; color:white; padding:10px; height:500px; width:100%;">
+<div style="color:white"><h3> Get in touch </h3> </div>
+
+
+<div style="float: left;width: 300px;padding: 49px"><h4>Davis Campus</h4>
+7899 McLaughlin Road
+Brampton, Ontario L6Y 5H9T: 905 459 7533</div>
+<div style="float: right;padding: 40px; width:300px"><h4>Trafalgar Road Campus</h4>1430 Trafalgar Road
+Oakville, Ontario L6H 2L1
+T: 905 845 9430</div>
+<div style=" text-align:center;overflow: hidden; padding:40px;display:block;"><h4>Hazel McCallion Campus</h4>
+<div style="width:200px;position:relative; left:38%;">4180 Duke of York Blvd
+Mississauga, Ontario L5B 0G5
+T: 905 845 9430</div></div>
+
+<div>
+<p style="position:relative ; left :5% ;font-family:Sitka Small ; font-size:30px ">Sherdian | Get Creative</p></div>
+
+<div style="position:relative; left:70%; ">
+<p>Follow us on</p>
+    <span><a href="http://www.facebook.com"><img src="../static/images/facebook.png" th:src="@{/images/facebook.png}" width="50px" /></a></span>
+    <span><a href="http://www.twitter.com"><img src="../static/images/twitter.png" th:src="@{/images/twitter.png}" width="50px"  /></a></span>
+    <span><a href="http://www.linkedin.com"><img src="../static/images/linkedin.png" th:src="@{/images/linkedin.png}" width="50px" /></a></span>
+     <span></span><a href="http://www.snapchat.com"><img src="../static/images/snapchat.png" th:src="@{/images/snap.png}" width="50px" /></a></span>
+      <span><a href="http://www.instagram.com"><img src="../static/images/instagram.png" th:src="@{/images/instagram.png}" width="50px" /></a></span>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

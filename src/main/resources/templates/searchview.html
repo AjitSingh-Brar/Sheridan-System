@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>View</title>
+<link rel="stylesheet" type="text/css"  media="all"  href="../static/view.css" th:href="@{/view.css}"/>
+</head>
+<body>
+<Center><h1>Sheridan Bookstore</h1></Center>
+<center>
+<table >
+
+<th>ID</th>
+<th>Title</th>
+
+<th>Author</th>
+
+<th>Price</th>
+
+<th>Quantity</th>
+<th>Courses</th>
+<th>Campus</th>
+
+
+
+</tr>
+
+<tr th:each="drink : ${hi}">
+
+<td th:text="${drink.id}"></td>
+
+
+<td th:text="${drink.title}"></td>
+
+<td th:text="${drink.author}"></td>
+
+<td th:text="${drink.price}"></td>
+
+<td th:text="${drink.quantity}"></td>
+
+<td th:text="${drink.course}"></td>
+
+<td th:text="${drink.campus}"></td>
+
+<td><a href="" th:href="@{/editlink/{id}(id= ${drink.id})}">Edit</a></td>
+<td><a href="" th:href="@{/deletelink/{id}(id = ${drink.id})}">Delete</a></td>
+<td th:if="${drink.quantity ge 1}" class="q-pagination-disabled"><a href="" th:href="@{/purchaselink/{id}(id = ${drink.id})}" >Purchase</a></td>
+
+
+
+
+</tr>
+
+
+</table></center>
+<br>
+<hr>
+<center> By Title</center>
+<center>
+<table >
+
+<th>ID</th>
+<th>Title</th>
+
+<th>Author</th>
+
+<th>Price</th>
+
+<th>Quantity</th>
+<th>Courses</th>
+<th>Campus</th>
+
+
+
+</tr>
+
+<tr th:each="drinks : ${hit}">
+
+<td th:text="${drinks.id}"></td>
+
+
+<td th:text="${drinks.title}"></td>
+
+<td th:text="${drinks.author}"></td>
+
+<td th:text="${drinks.price}"></td>
+
+<td th:text="${drinks.quantity}"></td>
+
+<td th:text="${drinks.course}"></td>
+
+<td th:text="${drinks.campus}"></td>
+
+<td><a href="" th:href="@{/editlink/{id}(id= ${drinks.id})}">Edit</a></td>
+<td><a href="" th:href="@{/deletelink/{id}(id = ${drinks.id})}">Delete</a></td>
+<td th:if="${drinks.quantity ge 1}" class="q-pagination-disabled"><a href="" th:href="@{/purchaselink/{id}(id= ${drinks.id})}">Purchase</a></td>
+
+
+
+
+</tr>
+
+
+</table></center>
+
+<br>
+<hr>
+<center> By Author</center>
+<center>
+<table >
+
+<th>ID</th>
+<th>Title</th>
+
+<th>Author</th>
+
+<th>Price</th>
+
+<th>Quantity</th>
+<th>Courses</th>
+<th>Campus</th>
+
+
+
+</tr>
+
+<tr th:each="drinkss : ${hits}">
+
+<td th:text="${drinkss.id}"></td>
+
+
+<td th:text="${drinkss.title}"></td>
+
+<td th:text="${drinkss.author}"></td>
+
+<td th:text="${drinkss.price}"></td>
+
+<td th:text="${drinkss.quantity}"></td>
+
+<td th:text="${drinkss.course}"></td>
+
+<td th:text="${drinkss.campus}"></td>
+
+<td><a href="" th:href="@{/editlink/{id}(id= ${drinkss.id})}">Edit</a></td>
+<td><a href="" th:href="@{/deletelink/{id}(id = ${drinkss.id})}">Delete</a></td>
+<td th:if="${drinkss.quantity ge 1}" class="q-pagination-disabled"><a href="" th:href="@{/purchaselink/{id}(id= ${drinkss.id})}">Purchase</a></td>
+
+
+
+
+</tr>
+
+
+</table></center>
+
+<br>
+<hr>
+<center> By Course</center>
+<center>
+<table >
+
+<th>ID</th>
+<th>Title</th>
+
+<th>Author</th>
+
+<th>Price</th>
+
+<th>Quantity</th>
+<th>Courses</th>
+<th>Campus</th>
+
+
+
+</tr>
+
+<tr th:each="drinksss : ${hitss}">
+
+<td th:text="${drinksss.id}"></td>
+
+
+<td th:text="${drinksss.title}"></td>
+
+<td th:text="${drinksss.author}"></td>
+
+<td th:text="${drinksss.price}"></td>
+
+<td th:text="${drinksss.quantity}"></td>
+
+<td th:text="${drinksss.course}"></td>
+
+<td th:text="${drinksss.campus}"></td>
+
+<td><a href="" th:href="@{/editlink/{id}(id= ${drinksss.id})}">Edit</a></td>
+<td><a href="" th:href="@{/deletelink/{id}(id = ${drinksss.id})}">Delete</a></td>
+<td th:if="${drinksss.quantity ge 1}" class="q-pagination-disabled"><a href="" th:href="@{/purchaselink/{id}(id = ${drinksss.id})}">Purchase</a></td>
+
+
+
+
+</tr>
+
+
+</table></center>
+
+<br>
+<hr>
+<center> By Quantity</center>
+<center>
+<table >
+
+<th>ID</th>
+<th>Title</th>
+
+<th>Author</th>
+
+<th>Price</th>
+
+<th>Quantity</th>
+<th>Courses</th>
+<th>Campus</th>
+
+
+
+</tr>
+
+<tr th:each="drinksse : ${hitse}">
+
+<td th:text="${drinksse.id}"></td>
+
+
+<td th:text="${drinksse.title}"></td>
+
+<td th:text="${drinksse.author}"></td>
+
+<td th:text="${drinksse.price}"></td>
+
+<td th:text="${drinksse.quantity}"></td>
+
+<td th:text="${drinksse.course}"></td>
+
+<td th:text="${drinksse.campus}"></td>
+
+<td><a href="" th:href="@{/editlink/{id}(id= ${drinksse.id})}">Edit</a></td>
+<td><a href="" th:href="@{/deletelink/{id}(id = ${drinksse.id})}">Delete</a></td>
+<td th:if="${drinksse.quantity ge 1}" class="q-pagination-disabled"><a href="" th:href="@{/purchaselink/{id}(id= ${drinksse.id})}">Purchase</a></td>
+
+
+
+
+</tr>
+
+
+</table></center>
+</body>
+</html>
